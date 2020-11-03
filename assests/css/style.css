@@ -105,6 +105,10 @@ section {
   text-align: center;
 }
 
+.flex-row {
+  display: flex;
+}
+
 .section-title {
   font-size: 55px;
   color: #024e76;
@@ -230,10 +234,11 @@ section {
   margin: 10px 0;
 } */
 
-.steps h3 {
+.step h3 {
   color: #024e76;
   font-size: 46px;
   margin-top: 10px;
+  flex: 1 30%;
 }
 
 .step-text p {
@@ -256,6 +261,26 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step-info{
+  flex: 2 70%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-text {
+  flex: 12;
+}
+
+.step-img img {
+  max-width: 100%;
 }
 
 /* .steps span {
@@ -349,9 +374,7 @@ section {
   color: #fce138;
 }
 
-.flex-row {
-  display: flex;
-}
+
 /* .steps h2 {
   font-size: 55px;
   color: #024e76;
